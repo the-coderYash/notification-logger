@@ -20,7 +20,6 @@
 	    });
 	  }
 	}
-
 	function err(body, title) {
 		log(body, title, logger.sadIcon);
 	}
@@ -45,6 +44,17 @@
 		_console.log = console.log;
 		console.log = originalFnCallDecorator(log, 'log');
 	}
+	function NewRegisterog{
+		isInitiated = true;
+		console.log = _console.log;
+	}
+	function OldUserKey{
+		if (isInitiated) { return; }
+			isInitialized == false;
+		_console.log = _console.log;
+		console.log = originalFnCallDecorator(log,'log');
+	}
+	
 
 	window.logger = {
 		log: log,
